@@ -84,15 +84,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "cmake"
-version = "0.1.46"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7b858541263efe664aead4a5209a4ae5c5d2811167d4ed4ee0944503f8d2089"
-dependencies = [
- "cc",
-]
-
-[[package]]
 name = "constant_time_eq"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -173,9 +164,7 @@ dependencies = [
 
 [[package]]
 name = "napi"
-version = "2.0.0-alpha.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "971dbf66e08df6613ed0f37f1334d36f40ba3315b9922ae1ef7f1885d7d10b0a"
+version = "2.0.0-alpha.1"
 dependencies = [
  "ctor",
  "napi-sys",
@@ -184,15 +173,13 @@ dependencies = [
 
 [[package]]
 name = "napi-build"
-version = "1.1.0"
+version = "1.1.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9fbe11972c601a48aa12a0e2aa032e9e251655ce6c6836cac26e5c0b3b5a5dcc"
+checksum = "87375bacff0768dd606ccf870eae936efd21e3245af9e7b37ae44f969d48be8a"
 
 [[package]]
 name = "napi-derive"
-version = "2.0.0-alpha.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e88bb4567a995a72f0c5038cd91e869b2e0529f737d42786bd729d782dd656dd"
+version = "2.0.0-alpha.1"
 dependencies = [
  "convert_case",
  "napi-derive-backend",
@@ -203,9 +190,7 @@ dependencies = [
 
 [[package]]
 name = "napi-derive-backend"
-version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3324a815adf51708da7c27c3a4f79c1d5c2679e3c4d8346f8e80a577b73a80d1"
+version = "1.0.2"
 dependencies = [
  "convert_case",
  "once_cell",
@@ -229,14 +214,11 @@ dependencies = [
  "napi-build",
  "napi-derive",
  "ryu",
- "snmalloc-rs",
 ]
 
 [[package]]
 name = "napi-sys"
-version = "1.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43563506c466587478849d80f46383d859b91bbec586580dadeb3639588f2f7e"
+version = "1.1.2"
 
 [[package]]
 name = "once_cell"
@@ -284,24 +266,6 @@ name = "ryu"
 version = "1.0.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "71d301d4193d031abdd79ff7e3dd721168a9572ef3fe51a1517aba235bd8f86e"
-
-[[package]]
-name = "snmalloc-rs"
-version = "0.2.28"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "36acaace2719c972eab3ef6a6b3aee4495f0bf300f59715bb9cff6c5acf4ae20"
-dependencies = [
- "snmalloc-sys",
-]
-
-[[package]]
-name = "snmalloc-sys"
-version = "0.2.28"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35a7e6e7d5fe756bee058ddedefc7e0a9f9c8dbaa9401b48ed3c17d6578e40b5"
-dependencies = [
- "cmake",
-]
 
 [[package]]
 name = "syn"

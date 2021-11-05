@@ -10,10 +10,10 @@
   - [ ] Params
   - [x] Hash
 - [ ] blake2s
-  - [ ] Pramas
+  - [ ] Params
   - [x] Hash
 - [ ] blake2bp
-  - [ ] Pramas
+  - [ ] Params
   - [x] Hash
 - [ ] blake2sp
   - [ ] Params

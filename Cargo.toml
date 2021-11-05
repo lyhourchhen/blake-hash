@@ -12,18 +12,16 @@ blake2b_simd = "0.5"
 blake2s_simd = "0.5"
 blake3 = {version = "1"}
 hex = "0.4"
-napi = "2.0.0-alpha.0"
-napi-derive = "2.0.0-alpha.0"
+napi = {path = "../napi-rs/crates/napi"}
+napi-derive = {path = "../napi-rs/crates/macro"}
 ryu = "1"
 
-[target.'cfg(all(not(all(target_os = "linux", target_arch = "aarch64", target_env = "musl")), not(all(target_os = "windows", target_arch = "aarch64")), not(target_arch = "x86_64")))'.dependencies]
+[target.'cfg(all(not(all(target_os = "linux", target_arch = "aarch64", target_env = "musl")), not(all(target_os = "windows", target_arch = "aarch64"))))'.dependencies]
 mimalloc-rust = {version = "0.1"}
-
-[target.'cfg(target_arch = "x86_64")'.dependencies]
-snmalloc-rs = {version = "0.2", features = ["cache-friendly", "16mib", "native-cpu", "usecxx20"]}
 
 [build-dependencies]
 napi-build = "1"
 
 [profile.release]
+codegen-units = 1
 lto = true
